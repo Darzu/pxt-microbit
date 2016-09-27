@@ -89,94 +89,153 @@
             "compass": true
         },
         "boardDefinition": {
-            "visual": "microbit",
-            "gpioPinBlocks": [
-                [
-                    "P0"
-                ],
-                [
-                    "P1"
-                ],
-                [
-                    "P2"
-                ],
-                [
-                    "P3"
-                ],
-                [
-                    "P4",
-                    "P5",
-                    "P6",
-                    "P7"
-                ],
-                [
-                    "P8",
-                    "P9",
-                    "P10",
-                    "P11",
-                    "P12"
-                ],
-                [
-                    "P16"
+          "visual":{
+            "image":"/parts/arduino-zero.png",
+            "outlineImage":"/parts/arduino-zero-outline.svg",
+            "width":1000,
+            "height":762,
+            "pinDist":35.5,
+            "pinBlocks":[
+              {
+                "x":276.8,
+                "y":17.8,
+                "labelPosition":"below",
+                "labels":[
+                  "SCL",
+                  "SDA",
+                  "AREF",
+                  "GND0",
+                  "~13",
+                  "~12",
+                  "~11",
+                  "~10",
+                  "~9",
+                  "~8"
                 ]
-            ],
-            "gpioPinMap": {
-                "P0": "P0",
-                "P1": "P1",
-                "P2": "P2",
-                "P3": "P3",
-                "P4": "P4",
-                "P5": "P5",
-                "P6": "P6",
-                "P7": "P7",
-                "P8": "P8",
-                "P9": "P9",
-                "P10": "P10",
-                "P11": "P11",
-                "P12": "P12",
-                "P13": "P13",
-                "P14": "P14",
-                "P15": "P15",
-                "P16": "P16",
-                "P19": "P19",
-                "P20": "P20"
-            },
-            "spiPins": {
-                "MOSI": "P15",
-                "MISO": "P14",
-                "SCK": "P13"
-            },
-            "i2cPins": {
-                "SDA": "P20",
-                "SCL": "P19"
-            },
-            "analogInPins": [
-                "P0",
-                "P1",
-                "P2",
-                "P3",
-                "P10"
-            ],
-            "groundPins": [
-                "GND"
-            ],
-            "threeVoltPins": [
-                "+3v3"
-            ],
-            "attachPowerOnRight": true,
-            "onboardComponents": [
-                "buttonpair",
-                "ledmatrix",
-                "speaker"
-            ],
-            "useCrocClips": true,
-            "marginWhenBreadboarding": [
-                0,
-                0,
-                80,
-                0
+              },
+              {
+                "x":655.5,
+                "y":17.8,
+                "labelPosition":"below",
+                "labels":[
+                  "7",
+                  "~6",
+                  "~5",
+                  "~4",
+                  "~3",
+                  "2",
+                  "TX->1",
+                  "RX<-0"
+                ]
+              },
+              {
+                "x":411.7,
+                "y":704.6,
+                "labelPosition":"above",
+                "labels":[
+                  "ATN",
+                  "IOREF",
+                  "RESET",
+                  "3.3V",
+                  "5V",
+                  "GND1",
+                  "GND2",
+                  "VIN"
+                ]
+              },
+              {
+                "x":732.9,
+                "y":704.6,
+                "labelPosition":"above",
+                "labels":[
+                  "A0",
+                  "A1",
+                  "A2",
+                  "A3",
+                  "A4",
+                  "A5"
+                ]
+              }
             ]
+          },
+          "gpioPinBlocks":[
+            [
+              "A0",
+              "A1",
+              "A2",
+              "A3",
+              "A4",
+              "A5"
+            ],
+            [
+              "~13",
+              "~12",
+              "~11",
+              "~10",
+              "~9",
+              "~8"
+            ],
+            [
+              "7",
+              "~6",
+              "~5",
+              "~4",
+              "~3",
+              "2",
+              "TX->1",
+              "RX<-0"
+            ]
+          ],
+          "gpioPinMap":{
+            "P0":"A0",
+            "P1":"A1",
+            "P2":"A2",
+            "P3":"A3",
+            "P4":"A4",
+            "P5":"A5",
+            "P6":"RX<-0",
+            "P7":"TX->1",
+            "P8":"2",
+            "P9":"~3",
+            "P10":"~4",
+            "P11":"~5",
+            "P12":"~6",
+            "P13":"7",
+            "P14":"~8",
+            "P15":"~9",
+            "P16":"~10",
+            "P19":"~11",
+            "P20":"~12"
+          },
+          "spiPins":{
+            "MOSI":"~9",
+            "MISO":"~8",
+            "SCK":"~10"
+          },
+          "analogInPins":[
+            "A0",
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "groundPins":[
+            "GND1",
+            "GND0",
+            "GND2"
+          ],
+          "threeVoltPins":[
+            "3.3V"
+          ],
+          "marginWhenBreadboarding":[
+            20,
+            0,
+            40,
+            0
+          ]
         }
+        
     },
     "compileService": {
         "yottaTarget": "bbc-microbit-classic-gcc",
