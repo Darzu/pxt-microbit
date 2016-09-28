@@ -15,9 +15,9 @@
         },
         "numberOfPins": 4,
         "pinDefinitions": [
-            {"target": "P14", "style": "male", "orientation": "-Z"},
-            {"target": "ground", "style": "male", "orientation": "-Z"},
             {"target": "P15", "style": "male", "orientation": "-Z"},
+            {"target": "ground", "style": "male", "orientation": "-Z"},
+            {"target": "P14", "style": "male", "orientation": "-Z"},
             {"target": "ground", "style": "male", "orientation": "-Z"}
         ],
         "instantiation": {
@@ -84,16 +84,17 @@
         "numberOfPins": 10,
         "instantiation": {"kind": "singleton"},
         "pinDefinitions": [
-            {"target": "P6", "style": "male", "orientation": "-Z", "colorGroup": 0},
-            {"target": "P7", "style": "male", "orientation": "-Z", "colorGroup": 0},
-            {"target": "P8", "style": "male", "orientation": "-Z", "colorGroup": 0},
-            {"target": "P9", "style": "male", "orientation": "-Z", "colorGroup": 0},
             {"target": "P10", "style": "male", "orientation": "-Z", "colorGroup": 0},
-            {"target": "P12", "style": "male", "orientation": "-Z", "colorGroup": 1},
-            {"target": "P13", "style": "male", "orientation": "-Z", "colorGroup": 1},
-            {"target": "P16", "style": "male", "orientation": "-Z", "colorGroup": 1},
-            {"target": "P19", "style": "male", "orientation": "-Z", "colorGroup": 1},
-            {"target": "P20", "style": "male", "orientation": "-Z", "colorGroup": 1}
+            {"target": "P9", "style": "male", "orientation": "-Z", "colorGroup": 0},
+            {"target": "P8", "style": "male", "orientation": "-Z", "colorGroup": 0},
+            {"target": "P7", "style": "male", "orientation": "-Z", "colorGroup": 0},
+            {"target": "P6", "style": "male", "orientation": "-Z", "colorGroup": 0},
+
+            {"target": "P1", "style": "male", "orientation": "-Z", "colorGroup": 1},
+            {"target": "P2", "style": "male", "orientation": "-Z", "colorGroup": 1},
+            {"target": "P3", "style": "male", "orientation": "-Z", "colorGroup": 1},
+            {"target": "P4", "style": "male", "orientation": "-Z", "colorGroup": 1},
+            {"target": "P5", "style": "male", "orientation": "-Z", "colorGroup": 1}
         ],
         "assembly": [
             {"part": true},

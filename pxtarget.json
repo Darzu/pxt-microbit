@@ -234,8 +234,8 @@
             40,
             0
           ]
-        }
-        
+        },
+        "instructions": true
     },
     "compileService": {
         "yottaTarget": "bbc-microbit-classic-gcc",

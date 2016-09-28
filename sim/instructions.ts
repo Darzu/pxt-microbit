@@ -9,14 +9,7 @@ import pxtdocs = pxt.docs;
 
 namespace pxsim.instructions {
     export function drawInstructions() {
-        pxsim.visuals.mkBoardView = (opts: pxsim.visuals.BoardViewOptions): pxsim.visuals.BoardView => {
-            return new visuals.MicrobitBoardSvg({
-                runtime: runtime,
-                theme: visuals.randomTheme(),
-                disableTilt: false,
-                wireframe: opts.wireframe,
-            });
-        }
+        pxsim.visuals.mkBoardView = pxsim.visuals.mkBoardView;
 
         let getQsVal = parseQueryString();
 
@@ -28,7 +21,6 @@ namespace pxsim.instructions {
 
         //parts list
         let parts = (getQsVal("parts") || "").split(" ");
-        parts.sort();
 
         // parts definitions
         let partDefinitions = JSON.parse(getQsVal("partdefs") || "{}") as pxsim.Map<PartDefinition>
