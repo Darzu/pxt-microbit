@@ -79,15 +79,6 @@
         "aspectRatio": 1.22,
         "parts": true,
         "partsAspectRatio": 0.69,
-        "builtinParts": {
-            "accelerometer": true,
-            "buttonpair": true,
-            "ledmatrix": true,
-            "speaker": true,
-            "bluetooth": true,
-            "thermometer": true,
-            "compass": true
-        },
         "boardDefinition": {
           "visual":{
             "image":"/parts/arduino-zero.png",
@@ -384,9 +375,5 @@
                 "path": "/static/mb/device/usb-windows-sendto.jpg"
             }
         ]
-    },
-    "analytics": {
-        "userVoiceApiKey": "WEkkIGaj1WtJnSUF59iwaA",
-        "userVoiceForumId": 402381
     }
 }
