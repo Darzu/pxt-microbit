@@ -90,7 +90,7 @@
               {
                 "x":276.8,
                 "y":17.8,
-                "labelPosition":"below",
+                "labelDirection":270,
                 "labels":[
                   "SCL",
                   "SDA",
@@ -107,7 +107,7 @@
               {
                 "x":655.5,
                 "y":17.8,
-                "labelPosition":"below",
+                "labelDirection":270,
                 "labels":[
                   "7",
                   "~6",
@@ -122,7 +122,7 @@
               {
                 "x":411.7,
                 "y":704.6,
-                "labelPosition":"above",
+                "labelDirection":90,
                 "labels":[
                   "ATN",
                   "IOREF",
@@ -137,7 +137,7 @@
               {
                 "x":732.9,
                 "y":704.6,
-                "labelPosition":"above",
+                "labelDirection":90,
                 "labels":[
                   "A0",
                   "A1",
